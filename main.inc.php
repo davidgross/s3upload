@@ -29,7 +29,7 @@ define('S3UPLOAD_ABS_ROOT_PATH', realpath(PHPWG_ROOT_PATH));
 define('S3UPLOAD_ROOT_URL', get_root_url());;
 
 //Check for known compatible Piwigo version
-if( version_compare(PHPWG_VERSION, '2.5.0', '=') || version_compare(PHPWG_VERSION, '2.5.1', '=') ) {
+if( version_compare(PHPWG_VERSION, '2.5.0', '=') || version_compare(PHPWG_VERSION, '2.5.1', '=') || version_compare(PHPWG_VERSION, '2.7.3', '=') ) {
 	//Compatible
 	define('S3UPLOAD_COMPATIBLE', true);
 }else{

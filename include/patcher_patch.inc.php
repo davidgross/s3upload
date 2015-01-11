@@ -20,7 +20,7 @@ function s3upload_patcher_patch(){
 			}
 		}else{
 			$result = 'Failed';
-			$_SESSION['page_errors'][] = l10n('S3Upload Plugin failed to patch \'admin/include/functions_upload.inc.php\' because file did not contains was not the expected 2.5.0 contents. An update to the S3Upload plugin to match the current Piwigo release is pending.') . ' ' . l10n('So, S3 uploads will be the Piwigo-reduced size (if applicable), not the true original.');
+			$_SESSION['page_errors'][] = l10n('S3Upload Plugin failed to patch \'admin/include/functions_upload.inc.php\' because file did not contain the expected 2.7.3 contents. An update to the S3Upload plugin to match the current Piwigo release is pending.') . ' ' . l10n('So, S3 uploads will be the Piwigo-reduced size (if applicable), not the true original.');
 		}
 	}
 	return $result;
